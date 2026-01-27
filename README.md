@@ -1,129 +1,99 @@
-NLP Topic Modeling & Search Engine (TF-IDF + LDA)
+# NLP Topic Modeling and Document Search Engine
 
-A modular Natural Language Processing project that performs topic modeling using TF-IDF vectorization + Latent Dirichlet Allocation (LDA) and provides a simple search interface over documents.
+This project implements a complete **Natural Language Processing (NLP) pipeline** that performs topic modeling and semantic document search on a text corpus using classical machine learning techniques.
 
-This project is designed with clean code structure, separation of concerns, and production-style organization, suitable for learning, evaluation, and extension.
+The system preprocesses raw text, converts it into numerical representations, discovers latent topics using LDA, and allows users to search documents based on semantic similarity.
 
-Features
+---
 
-📄 Load and preprocess text documents
+## Key Features
 
-🧹 Clean text (lowercasing, punctuation removal, normalization)
+- Text preprocessing:
+  - Lowercasing
+  - Punctuation removal
+  - Whitespace normalization
+- TF-IDF based document–term matrix construction
+- Latent topic discovery using Latent Dirichlet Allocation (LDA)
+- Interactive document search using cosine similarity
+- Modular and extensible project structure
 
-🔢 Convert text into TF-IDF document–term matrix
+---
 
-🧠 Discover latent topics using LDA
+## Project Structure
 
-🔎 Search documents using cosine similarity
-
-🧩 Modular, extensible codebase (easy to add new models)
-
-Project Structure
+## Project Structure
 
 NEW-PROJECT-2/
-│
 ├── data/
-│   └── documents.txt          # Input text corpus (one document per line)
-│
+│ └── documents.txt # Input corpus (one document per line)
 ├── src/
-│   ├── __init__.py
-│   ├── preprocessing.py       # Text cleaning & document loading
-│   ├── vectorizer.py           # TF-IDF vectorization
-│   ├── topic_model.py          # LDA topic modeling
-│   └── search_engine.py        # Search over documents
-│
-├── main.py                     # Entry point
-├── requirements.txt            # Dependencies
-├── .gitignore
+│ ├── preprocessing.py # Text cleaning and document loading
+│ ├── vectorizer.py # TF-IDF vectorization
+│ ├── topic_model.py # LDA topic modeling
+│ └── search_engine.py # Search using cosine similarity
+├── main.py # Entry point
+├── requirements.txt # Python dependencies
 └── README.md
 
-Installation
-1️⃣ Clone the repository
+
+---
+
+## Workflow Overview
+
+1. Load raw documents from `data/documents.txt`
+2. Clean and normalize text data
+3. Convert text into TF-IDF vectors
+4. Train an LDA model to discover latent topics
+5. Display top keywords for each discovered topic
+6. Accept a user search query
+7. Rank documents based on cosine similarity with the query
+
+---
+
+## Installation
+
+Clone the repository and install dependencies:
+
+```bash
 git clone https://github.com/rumaizik/NEW-PROJECT-2.git
 cd NEW-PROJECT-2
-2️⃣ Install dependencies
 pip install -r requirements.txt
 
-▶️ How to Run
+How to Run
+
 python main.py
 
-Output:
 
-Discovered topics with top keywords
+Output
 
-Interactive prompt to enter a search query
+Displays discovered topics with top keywords
 
-Ranked documents based on relevance
+Prompts the user to enter a search query
 
-Input Format
+Returns documents ranked by relevance scor
 
-The file data/documents.txt should contain:
+Technologies Used
 
-One document per line.
-Each line is treated as a separate document.
+Python
 
+scikit-learn
 
-Example:
+TF-IDF Vectorization
 
-Machine learning is transforming artificial intelligence.
-Natural language processing helps computers understand text.
-Topic modeling discovers hidden patterns in documents.
+Latent Dirichlet Allocation (LDA)
 
-Topic Modeling (LDA)
+Cosine Similarity
 
-Vectorization: TF-IDF
+Design Philosophy
 
-Topic Model: Latent Dirichlet Allocation
+This project emphasizes:
 
-Configurable number of topics
+Clear separation of responsibilities (preprocessing, modeling, search)
 
-Reproducible results using fixed random state
+Readable and maintainable code
 
-Example output:
+Easy extensibility for advanced NLP models (e.g., embeddings or transformers)
 
-=== TOPICS DISCOVERED ===
-Topic 1: ['models', 'search', 'vector', 'space', 'engines']
-Topic 2: ['hidden', 'discovers', 'transforming', 'intelligence']
-Topic 3: ['science', 'data', 'learning', 'used', 'widely']
-
- Search Engine
-
-Uses vector similarity over TF-IDF space
-
-Returns most relevant documents for a query
-
-Designed to mimic basic information retrieval systems
-
-Enter search query: machine learning
-
-🧩Design Philosophy
-
-Modular: Each component has a single responsibility
-
-Extensible: Easy to swap TF-IDF, LDA, or add embeddings
-
-Readable: Clear function names and structure
-
-Educational + Practical: Suitable for learning and demos
-
-🚀 Possible Extensions
-
-Replace TF-IDF with Word2Vec / Sentence Transformers
-
-Add Streamlit UI
-
-Support larger datasets
-
-Add topic coherence metrics
-
-Persist trained models
-
-👨‍💻 Author
+Author
 
 Rumaiz Ibrahim K
-M.Tech (Industrial Mathematics & Scientific Computing), IIT Madras
-
-
-📜 License
-
-This project is for educational and academic use.
