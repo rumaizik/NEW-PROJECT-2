@@ -21,7 +21,6 @@ The system preprocesses raw text, converts it into numerical representations, di
 
 ## Project Structure
 
-## Project Structure
 
 NEW-PROJECT-2/
 ├── data/
@@ -30,7 +29,7 @@ NEW-PROJECT-2/
 │ ├── preprocessing.py # Text cleaning and document loading
 │ ├── vectorizer.py # TF-IDF vectorization
 │ ├── topic_model.py # LDA topic modeling
-│ └── search_engine.py # Search using cosine similarity
+│ └── search_engine.py # Document search using cosine similarity
 ├── main.py # Entry point
 ├── requirements.txt # Python dependencies
 └── README.md
