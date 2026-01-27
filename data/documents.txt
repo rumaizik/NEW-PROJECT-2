@@ -1,0 +1,6 @@
+Machine learning is transforming artificial intelligence.
+Natural language processing helps computers understand text.
+Deep learning uses neural networks for complex tasks.
+Python is widely used in data science and machine learning.
+Search engines rely on vector space models.
+Topic modeling discovers hidden patterns in documents.
