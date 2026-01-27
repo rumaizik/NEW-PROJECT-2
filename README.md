@@ -18,29 +18,24 @@ The system preprocesses raw text, converts it into numerical representations, di
 - Modular and extensible project structure
 
 ---
-Markdown
 ## Project Structure
-'''
 
+```text
 NEW-PROJECT-2/
-│
 ├── data/
-│   └── documents.txt          # Input text corpus (one document per line)
-│
+│   └── documents.txt        # Input corpus (one document per line)
 ├── src/
-│   ├── __init__.py             # Marks src as a Python package
-│   ├── preprocessing.py       # Text cleaning & document loading
-│   ├── vectorizer.py           # TF-IDF vectorization
-│   ├── topic_model.py          # LDA topic modeling
-│   └── search_engine.py        # Cosine similarity search
-│
-├── main.py                     # Entry point
-├── requirements.txt            # Dependencies
+│   ├── __init__.py          # Marks src as a Python package
+│   ├── preprocessing.py    # Text cleaning & document loading
+│   ├── vectorizer.py        # TF-IDF vectorization
+│   ├── topic_model.py       # LDA topic modeling
+│   └── search_engine.py     # Cosine similarity search
+├── main.py                  # Entry point
+├── requirements.txt         # Python dependencies
 ├── .gitignore
 └── README.md
+```
 
-
-'''
 ---
 
 ## Workflow Overview
