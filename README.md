@@ -58,42 +58,22 @@ Clone the repository and install dependencies:
 git clone https://github.com/rumaizik/NEW-PROJECT-2.git
 cd NEW-PROJECT-2
 pip install -r requirements.txt
+```
 
-How to Run
+## How to Run
 
+```bash
 python main.py
+```
 
+## Output
 
-Output
+- Displays discovered topics with top keywords
+- Prompts the user to enter a search query
+- Returns documents ranked by relevance score
 
-Displays discovered topics with top keywords
+## Technologies Used
 
-Prompts the user to enter a search query
-
-Returns documents ranked by relevance scor
-
-Technologies Used
-
-Python
-
-scikit-learn
-
-TF-IDF Vectorization
-
-Latent Dirichlet Allocation (LDA)
-
-Cosine Similarity
-
-Design Philosophy
-
-This project emphasizes:
-
-Clear separation of responsibilities (preprocessing, modeling, search)
-
-Readable and maintainable code
-
-Easy extensibility for advanced NLP models (e.g., embeddings or transformers)
-
-Author
-
-Rumaiz Ibrahim K
+- Python
+- scikit-learn
+- NumPy
