@@ -22,6 +22,8 @@ The system preprocesses raw text, converts it into numerical representations, di
 ## Project Structure
 
 
+## Project Structure
+
 NEW-PROJECT-2/
 ├── data/
 │ └── documents.txt # Input corpus (one document per line)
