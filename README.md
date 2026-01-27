@@ -58,7 +58,7 @@ Clone the repository and install dependencies:
 git clone https://github.com/rumaizik/NEW-PROJECT-2.git
 cd NEW-PROJECT-2
 pip install -r requirements.txt
-```
+
 
 ## How to Run
 
@@ -74,6 +74,16 @@ python main.py
 
 ## Technologies Used
 
-- Python
-- scikit-learn
-- NumPy
+- Python  
+- scikit-learn  
+- TF-IDF Vectorization  
+- Latent Dirichlet Allocation (LDA)  
+- Cosine Similarity  
+
+## Design Philosophy
+
+This project emphasizes:
+
+- Clear separation of responsibilities (preprocessing, vectorization, modeling, search)
+- Readable and maintainable code
+- Easy extensibility for advanced NLP models (e.g., embeddings or transformers)
