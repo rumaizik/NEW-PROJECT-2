@@ -18,9 +18,9 @@ The system preprocesses raw text, converts it into numerical representations, di
 - Modular and extensible project structure
 
 ---
-'''markdown
+Markdown
 ## Project Structure
-'''text
+'''
 
 NEW-PROJECT-2/
 │
@@ -40,7 +40,7 @@ NEW-PROJECT-2/
 └── README.md
 
 
-
+'''
 ---
 
 ## Workflow Overview
