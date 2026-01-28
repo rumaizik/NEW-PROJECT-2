@@ -3,7 +3,7 @@
 This project implements a complete **Natural Language Processing (NLP) pipeline** that performs topic modeling and document search based on vector similarity
  on a text corpus using classical machine learning techniques.
 
-The system preprocesses raw text, converts it into numerical representations, discovers latent topics using LDA, and allows users to search documents based on vector similarity..
+The system preprocesses raw text, converts it into numerical representations, discovers latent topics using LDA, and allows users to search documents based on vector similarity.
 
 ---
 
